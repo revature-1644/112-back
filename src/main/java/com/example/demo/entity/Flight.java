@@ -1,7 +1,11 @@
 package com.example.demo.entity;
 
-public class Flight {
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
+public class Flight {
+    @Id
     public int flightId;
     public String departureCity;
     public String arrivalCity;
